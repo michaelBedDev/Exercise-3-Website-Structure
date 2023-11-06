@@ -1,8 +1,12 @@
+*{
+
+}
 h1{
     background-color: burlywood;
     color: cadetblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 1.5em;
+    margin:0;
 }
 h2{
     background-color: #695F5F;
@@ -15,4 +19,35 @@ h2{
 }
 .city{
     background-color: #b13bb3;
+}
+h5,h6{
+    background-color: #09f;
+}
+/*Cualquier descendiente, cualquier li dentro de ol*/
+ol li {
+    background-color: pink;
+}
+/*Primer descendiente empezando desde fuera*/
+p>em{
+    background-color: maroon;
+}
+/*Primer descendiente empezando desde dentro*/
+:first-child{
+
+}
+:only-child{
+    
+}
+/*Página no visitada, visitada, pinchar el enlace y sobre el enlace*/
+a:link{
+    color:red;
+}
+a:visited{
+    color:magenta;
+}
+a:active{
+    color:blue;
+}
+a:hover{
+    color:green;
 }

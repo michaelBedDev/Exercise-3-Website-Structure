@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title> 
+    <title>Forms</title>
     <link rel="stylesheet" href="style.css"> <!--forma 3 de poner un css-->
-    <style> 
+    <style>
         blockquote{
             background-color: crimson;
             color: rgb(186, 186, 212);
@@ -17,7 +17,7 @@
             border-width: 1em;
             border-color: black;
             border-style: groove;
-        } 
+        }
         p{
             background-color: blueviolet;
             color: aliceblue;
@@ -29,6 +29,10 @@
             border-radius: 50%;
         }
     </style> <!--forma 2 de poner un css--> <!--mejor em para tamaño para web responsive-->
+    <!--añadir fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <blockquote>
@@ -44,6 +48,7 @@
     <h3 class="city">h4 de prueba</h3>
     <h2 class="city">h4 de prueba</h2>
     <h1 class="city">h4 de prueba</h1>
+    <a href="">Ligazón</a>
     <form action="process.php" method="get">
         <label for="nameid">Name:</label>
         <input type="text" name="name" id="nameid" placeholder="Name">
@@ -84,11 +89,13 @@
 
         <br>
         <label for="comment">Put your comment</label>
+        <br>
         <textarea name="comment" id="comment" cols="50" rows="5">
 
         </textarea>
+        <br>
         <input type="submit" value="Submit">
     </form>
-    
+
 </body>
 </html>
